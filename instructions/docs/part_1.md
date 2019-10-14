@@ -31,6 +31,5 @@ $ git commit -am "part 1 complete"
 $ git push heroku master
 ```
 
-%th link_to 'Movie Title', title_header
 
 Next: [Part 2: Filter the list of movies by rating](part_2.md)
