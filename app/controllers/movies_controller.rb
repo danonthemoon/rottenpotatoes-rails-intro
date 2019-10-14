@@ -12,7 +12,6 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
-    @movies = Moive.all.sort_by { |m| m.bing }
   end
 
   def new
