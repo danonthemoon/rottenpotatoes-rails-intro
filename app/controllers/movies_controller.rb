@@ -11,7 +11,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    params[:sort_param] = %w{name location}.include?(params[:sort_param]) ? params[:sort_param] : 'name'
+    params[:sortby] = %w{title release_date}.include?(params[:sortby]) ? params[:sortby] : 'title'
     @movies = Movie.all.order("#{params[:sortby]} ASC")
   end
 
